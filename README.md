@@ -48,10 +48,11 @@ After your run the API on your local machine, you can start
 /api/user
 ```
 * Get all registered users (GET)
-* Create a new user (POST)
+* Create a new user (POST) 
 
 #### Request Body
 - name: String
+
 
 ```
 /api/user/:userId
@@ -61,14 +62,14 @@ After your run the API on your local machine, you can start
 #### Request Params
 - userId -> id of the user
 
-* Update the user (PUT)
 
+* Update the user (PUT)
 #### Request Params
 - userId -> id of the user
-
 #### Request Body
 - name: String
 * Delete the user (DELETE)
+
 
 ```
 /api/user/:userId/groups
@@ -82,58 +83,52 @@ After your run the API on your local machine, you can start
 /api/group
 ```
 * Get all registered groups (GET)
-* Create a new group (POST)
 
+* Create a new group (POST)
 #### Request Body
 - name: String
 - users: [ObjectId] -> User id
+
 
 ```
 /api/group/:groupId
 ```
 * Get a specific group (GET)
-
 #### Request Params
 - groupId -> id of the group
 
 * Update the group (PUT)
-
 #### Request Params
 - groupId -> id of the group
-
 #### Request Body
 - name: String
 
 * Delete the group (DELETE)
 
+
 ```
 /api/group/:groupId/users
 ```
-
 #### Request Params
 - groupId -> id of the group
 
+
 * Get all users from a group (GET)
+
 
 ```
 /api/group/:groupId/users
 ```
 * Add a user to a group (PUT)
-
 #### Request Params
 - groupId -> id of the group
-
 #### Request Body
 - users: [ObjectId] -> User id
 
 * Delete a user from a group (DELETE)
-
-
 #### Request Params
 - groupId -> id of the group
 
-#### Request Body
-- users: [ObjectId] -> User id
 
 ## Running the tests
 
