@@ -47,26 +47,26 @@ After your run the API on your local machine, you can start
 ```
 /api/user
 ```
-* Get all registered users (GET)
-* Create a new user (POST) 
+#### Get all registered users (GET)
+#### Create a new user (POST) 
 
-#### Request Body
+##### Request Body
 - name: String
 
 
 ```
 /api/user/:userId
 ```
-* Get a specific user (GET)
+#### Get a specific user (GET)
 
-#### Request Params
+##### Request Params
 - userId -> id of the user
 
 
-* Update the user (PUT)
-#### Request Params
+#### Update the user (PUT)
+##### Request Params
 - userId -> id of the user
-#### Request Body
+##### Request Body
 - name: String
 * Delete the user (DELETE)
 
@@ -74,7 +74,7 @@ After your run the API on your local machine, you can start
 ```
 /api/user/:userId/groups
 ```
-* Get all groups from a user (GET)
+#### Get all groups from a user (GET)
 
 ### Group endpoints
 
@@ -82,10 +82,10 @@ After your run the API on your local machine, you can start
 ```
 /api/group
 ```
-* Get all registered groups (GET)
+#### Get all registered groups (GET)
 
-* Create a new group (POST)
-#### Request Body
+#### Create a new group (POST)
+##### Request Body
 - name: String
 - users: [ObjectId] -> User id
 
@@ -93,40 +93,40 @@ After your run the API on your local machine, you can start
 ```
 /api/group/:groupId
 ```
-* Get a specific group (GET)
-#### Request Params
+#### Get a specific group (GET)
+##### Request Params
 - groupId -> id of the group
 
-* Update the group (PUT)
-#### Request Params
+#### Update the group (PUT)
+##### Request Params
 - groupId -> id of the group
-#### Request Body
+##### Request Body
 - name: String
 
-* Delete the group (DELETE)
+#### Delete the group (DELETE)
 
 
 ```
 /api/group/:groupId/users
 ```
-#### Request Params
+##### Request Params
 - groupId -> id of the group
 
 
-* Get all users from a group (GET)
+#### Get all users from a group (GET)
 
 
 ```
 /api/group/:groupId/users
 ```
-* Add a user to a group (PUT)
-#### Request Params
+#### Add a user to a group (PUT)
+##### Request Params
 - groupId -> id of the group
-#### Request Body
+##### Request Body
 - users: [ObjectId] -> User id
 
-* Delete a user from a group (DELETE)
-#### Request Params
+#### Delete a user from a group (DELETE)
+##### Request Params
 - groupId -> id of the group
 
 
