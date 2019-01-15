@@ -8,13 +8,10 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-```
 * [Nodejs](https://nodejs.org/en/) - The JavaScript run-time environment
 * [Mongodb](https://www.mongodb.com/) - The database to sabe your data
 * Any software that shows your data like Robo3T or Mongodb Compass
 * Any API development environment where you can make requests to the API like [Postman](https://www.getpostman.com/)
-
-```
 
 ### Installing
 
